@@ -1,13 +1,6 @@
----
-date: "2018-01-03"
-title: "Simple Minimal NodeJs Application"
-categories:
-  - Coding
----
 
-
-We are going to setup a minimal NodeJs application as possible. 
-Before that make sure you have NodeJs installed on your computer.We will follow through few steps to accomplish the task. 
+We are going to set up a minimal NodeJs application as possible. 
+Before that please make sure you have NodeJs installed on your computer. We will follow through a few steps to accomplish the task.
 
 
 ### Create a folder 
@@ -18,14 +11,14 @@ Before that make sure you have NodeJs installed on your computer.We will follow 
 
 ` npm init --y` 
 
-This will Initialize npm, I skipped the CLI entries with --y if you want you can fill in the details and skip the `--y` part
+This will Initialize npm, I've skipped the CLI entries with `--y` if you want, you can fill in the details and skip the `--y` part
 
 
 ### Install dependencies 
 
 `npm install express --save`
 
-This command will install express on our local repo, if you skip `--save` this will install express as a global dependency which also means that you can use express without installing it on other local repos but it could be dangerous. So avoid global package installations 
+This command will install express on our local repo if you skip `--save` this will install express as a global dependency which also means that you can use express without installing it on other local repos but it could be dangerous. So avoid global package installations 
 
 
 ### Dive into Code 
@@ -46,14 +39,13 @@ app.listen( 3000, function () {
 
 ```
 
-Lets go throught the code one by one. 
+Let's go through the code one by one. 
 
 
-First we are importing a package called express, Calling the function. Whenever some hits the route `/` we greet them with 
-`Welcome to my first application`. Also we are listening on port 3000. Now Head over to your browser (http://localhost:3000)to see the result.
+First, we are importing a package called express, Calling the function. Whenever someone hits the route `/` we greet them with 
+`Welcome to my first application`. Also, we are listening on port 3000. Now Head over to your browser (http://localhost:3000)to see the result.
 
 
 
 ![](./helloworld.png)
 ![](./hurray.jpeg)
-
