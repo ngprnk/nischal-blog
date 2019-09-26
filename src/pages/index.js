@@ -51,8 +51,8 @@ const IndexPage = ({
       <Hero>
         <h1>Hi.</h1>
         <p>
-          I&apos;m John Doe, a Senior UX Developer with five years of industry experience, specializing in developing
-          React apps with the best UX users can get.
+          I&apos;m Nischal Gautam, a Software Engineer with five years of industry experience, specializing in
+          developing React apps and NodeJs as backend.
         </p>
         <Link to="/contact">
           <Button big>
