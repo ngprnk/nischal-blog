@@ -1,0 +1,52 @@
+---
+date: "2019-09-25"
+title: "Setup MongoDB on your Mac using Homebrew"
+categories:
+  - Coding
+---
+
+
+
+### MongoDb installation On MACOS
+
+I would recommend using `brew` to install MongoDB, Brew allows for easy installation, easy uninstall, start, restart and stop. 
+Let's follow certain setps to make it happen.
+
+
+If you already have `brew` please skip the first step.
+
+1. Open up terminal and paste the command in your terminal.
+
+```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+
+2. `/data/db` directory is required by mongodb to store the database files.
+
+
+```bash 
+sudo mkdir -p /data/db
+
+```
+
+3. We will run the command to make sure it has correct permissions to run the database.
+
+
+```
+sudo chown -R `id -un` /data/db
+
+```
+
+4. Finally run this command to run MongoDB, this will run mongoDB server/ Daemon on your local computer.
+
+```
+mondod
+```
+
+5. Run the command below to make sure you have MongoDB on your computer.
+
+
+```
+mongo --version
+```
