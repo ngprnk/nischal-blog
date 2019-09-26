@@ -9,6 +9,17 @@ categories:
 We are going to set up a minimal NodeJs application as possible. 
 Before that please make sure you have NodeJs installed on your computer. We will follow through a few steps to accomplish this task.
 
+### Folder structure 
+
+
+Folder structure inside our app folder
+```
+.
+├── app.js
+├── node_modules
+
+
+```
 
 ### Create a folder 
 
@@ -31,6 +42,7 @@ This command will install express on our local repo if you skip `--save` this wi
 ### Dive into Code 
 
 
+`app.js`
 ```javascript 
 const express = require('express');
 
@@ -50,7 +62,13 @@ Let's go through the code one by one.
 
 
 First, we are importing a package called express, Calling the function. Whenever someone hits the route `/` we greet them with 
-`Welcome to my first application`. Also, we are listening on port 3000. Now Head over to your browser (http://localhost:3000)to see the result.
+`Welcome to my first application`. Also, we are listening on port 3000. 
+
+### Running the application 
+
+`node app.js`
+
+Now Head over to your browser (http://localhost:3000)to see the result.
 
 
 
